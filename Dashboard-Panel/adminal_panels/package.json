@@ -1,0 +1,31 @@
+{
+  "name": "adminal_panels",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "export": "^0.1.337",
+    "mdbreact": "^5.2.0",
+    "next": "^13.5.6-canary.1",
+    "package": "^1.0.1",
+    "react": "^18",
+    "react-bootstrap": "^2.9.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18",
+    "react-icon": "^1.0.0",
+    "react-icons": "^4.11.0",
+    "recharts": "^2.9.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "tailwindcss": "^3"
+  }
+}

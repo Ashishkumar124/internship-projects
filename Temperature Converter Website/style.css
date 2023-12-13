@@ -1,0 +1,71 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Mulish", sans-serif;
+}
+body{
+display: flex;
+font-family: 'Inconsolata', sans-serif;
+background-color:rgb(255, 251, 251);
+padding: 20px;
+margin: 0;
+height: 100vh;
+overflow: hidden;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+form{
+background-color:rgb(115, 216, 241);
+text-align: center;
+box-shadow: 2px 14px 16px -4px #777;
+border-radius: 11px;
+padding: 85px;
+width: 65%;
+}
+#tempCalc label{
+font-size: 22px;
+color:black;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#temp{
+border: none;
+height: 40px;
+width: 130px;
+padding: 10px;
+font-size: 20px;
+outline: none;
+margin-top: 20px;
+}
+#temp_diff {
+height: 40px;
+width: 130px;
+border: none;
+margin-top: 20px;
+font-size: 18px;
+vertical-align: top;
+}
+#submit{
+background-color: blueviolet;
+color: white;
+padding: 12px 30px;
+border: none;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+font-size: 20px;
+cursor: pointer;
+outline: none;
+font-weight: 500;
+margin-bottom: 4%;
+}
+#submit:hover{
+color: var(--primary-color--);
+font-weight: 400;
+transform: scale(0.9,0.9);
+color: whitesmoke;
+}
+
+#resultContainer{
+    font-size: x-large;
+}

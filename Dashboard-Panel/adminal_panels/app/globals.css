@@ -1,0 +1,787 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F5F6F8;
+    font-family: "Monserrat", sans-serif;
+}
+
+.icon{
+    vertical-align: middle;
+    line-height: 1px;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -130px;
+    margin-left: -250px;
+    cursor: pointer;
+}
+
+.icon_header{
+vertical-align: middle;
+line-height: 1px;
+font-size: 26px;
+}
+
+.close_icon{
+    color: #fff;
+    margin-left: 85px;
+    cursor: pointer;
+    font-weight: 800;
+    margin-top: -20px;
+}
+
+.menu-icon, .icon{
+  padding: 120px;  
+  font-size: 20px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 260px 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 
+    "sidebar header header header" 
+    "sidebar main main main";
+    height: 100vh;
+}
+/* Header Start */
+
+.header{
+    grid-area: header;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    box-sizing: 0 6px 7px -3px rgba(0,0,0,0.35);
+}
+
+.search-icon{
+    padding: 10px;
+    position: absolute;
+    font-size: 20px;
+    color: grey;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.header-close{
+    display: none;
+}
+
+.search{
+padding: 10px 30px;
+border-radius: 5px;
+}
+
+.p{
+    font-size: 30px;
+    font-weight: 700;
+}
+/* Header End */
+
+
+/* Sidebar Start */
+
+#sidebar{
+    grid-area: sidebar;
+    height: 100%;
+    width:93% ;
+    background-color: #040440;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.sidebar-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 0px 30px;
+    margin-bottom: 10px;
+}
+
+.sidebar-title > span{
+    display: none;
+}
+
+.sidebar-brand{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sidebar-list{
+    padding: 13px;
+    list-style-type: none;
+}
+
+.sidebar-list-item{
+    padding: 15px 15px 15px 15px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.sidebar-list-item:hover{
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+
+.sidebar-list-item > a{
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+}
+
+.sidebar-list-item > a:hover{
+    color: #fff;
+}
+
+.sidebar-responsive{
+    display: inline !important;
+    position: absolute;
+    z-index: 12 !important;
+}
+
+.sidebar-list-1{
+    padding: 12px;
+    list-style-type: none;
+margin-top: 110px;
+
+}
+
+.sidebar-list-item-1{
+    background-color: rgba(255,255,255,0.2);
+    padding: 5px 15px 5px 15px;
+    justify-content: space-between;
+    display: flex;
+    font-size: 10px;
+    font-weight: 600;
+    position: relative;
+}
+
+
+.sidebar-list-item-1 a > h2{
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    position:absolute;
+    margin-top: -40px;
+    margin-left: 55px;
+}
+
+.sidebar-list-item-1 a > img{
+border-radius: 50%;
+width: 40px;
+height: 40px;
+margin-top: 0px;
+}
+
+
+
+.sidebar-list-item-1 a > h3{
+font-size: 10px;
+position: absolute;
+margin-top: -20px;
+margin-left: 55px;
+color: gray;
+}
+
+.sidebar-list-item-1 a > span{
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+   margin-left: 130px;
+   position: absolute;
+   margin-top: 14px;
+   font-size: 14px;
+}
+
+/* Sidebar End */
+
+/* Main Start */
+
+.main-container{
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+}
+
+.main-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-cards{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 20px;
+margin: 15px 0;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 249px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+
+.card-inner > .card_icon{
+    border-radius: 50%;
+    font-size: 50px;
+    padding: 20px 20px;
+    margin: -41px 10px;
+    overflow:visible;
+}
+
+.card-inner > h3{
+    font-size: 10px;
+    font-weight: 200;
+   padding-left: 115px ;
+   margin-top: 45px ;
+   color: gray;
+}
+
+.card > h1{
+    position: absolute;
+   padding-left: 115px ;
+   margin-top: 58px ;
+   font-size: 22px;
+}
+
+.card > h3{
+    position: absolute;
+   padding-left: 115px ;
+   margin-top: 86px ;
+   font-size: 15px;
+   font-weight: 200;
+}
+
+
+
+
+/* Main End */
+
+/* Charts Start */
+
+.chart-container{
+    position: relative;
+    background-color: #FFFFFF;
+border-radius: 15px;
+width: 670px;
+height: 455px;
+}
+
+.chart-container > h1{
+    padding: 25px 0px 0px 35px;
+    font-weight: 600;
+    font-size: 21px;
+    
+}
+
+.chart-container > h3{
+    margin-top:-12px ;
+    padding-left: 37px;
+    position: absolute;
+    font-weight: 500;
+    color: gray;
+    font-size: 15px;
+}
+
+.charts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    height: 350px;
+    width: 1400px;
+}
+
+#days{
+position: absolute;
+margin-left: 540px;
+margin-top: -38px;
+background-color: #f5eef8;
+border-radius: 10px;
+padding: 10px 10px;
+color:rgb(99, 95, 95);
+border: none;
+}
+
+
+.chartes{
+    display: flex;
+    gap: 15px;
+}
+
+
+.pie-chart-container{
+    background-color: #FFFFFF;
+border-radius: 15px;
+width: 370px;
+position: relative;
+}
+
+.pie-chart-container > h1 {
+    padding: 25px 0px 0px 35px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.pie-chart-container > h3 {
+    padding-left:37px;
+    font-size: 15px;
+    font-weight: 500;
+    color: grey;
+    position: absolute;
+    margin-top: -10px;
+}
+
+.pie-chart-container p {
+    position: absolute;
+    padding: 135px 0px 0px 160px;
+    font-size: 28px;
+    overflow: visible;
+    font-weight: 700;
+}
+
+.pie-chart-container span {
+    width: 40%;
+    position: absolute;
+    padding: 193px 0px 0px 148px;
+    font-size: 15px;
+    overflow: visible;
+    font-weight: 700;
+}
+
+.pie-chart{
+  padding-left:55px;
+  position: absolute;
+  margin-top: -10px;
+}
+
+/* Charts End */
+
+
+
+
+/* Medium Responnsive */
+
+@media screen and (max-width: 992px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 3fr;
+        grid-template-areas:
+        "header"
+        "main";
+    }
+
+#sidebar{
+    display: none;
+}
+
+    .menu-icon{
+        display: inline;
+    }
+
+.sidebar-title > span{
+    display: inline;
+}
+
+
+#sidebar{
+    width:26% ;
+}
+
+.sidebar-brand{
+    margin-top: 25px;
+}
+
+.sidebar-title{
+    padding: 10px 20px 0px 28px;
+}
+
+.sidebar-list{
+    margin-top: 15px;
+}
+
+
+.sidebar-list-1{
+margin-top: 70px;
+
+}
+
+.icon{
+    font-size: 15px;
+}
+
+
+.close_icon{
+    margin-left: 85px;
+    font-weight: 600;
+    margin-top: -32px;
+}
+
+.icon_header{
+    font-size: 26px;
+    }
+    
+
+
+.p{
+    margin-right: 60px;
+}
+
+
+
+.main-container{
+    padding: 10px 11px;
+}
+
+.main-cards{
+gap: 10px;
+}
+
+.card{
+    height: 145px;
+    width: 230px;
+}
+
+.card > h3{
+   font-size: 12px;
+}
+
+
+.chart-container{
+    position: relative;
+    background-color: #FFFFFF;
+border-radius: 15px;
+width: 670px;
+}
+
+.charts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    height: 300px;
+    width: 1400px;
+}
+
+
+.chartes{
+    gap: 12px;
+}
+
+.pie-chart-container > h1 {
+    padding: 15px 0px 0px 83px;
+}
+
+.pie-chart-container > h3 {
+    padding:0px 0px 0px 50px;
+}
+
+.pie-chart-container p {
+    padding: 100px 0px 0px 120px;
+}
+
+.pie-chart-container span {
+    position: absolute;
+    padding: 160px 0px 0px 107px;
+}
+
+.pie-chart{
+  padding-left:20px;
+  margin-top: -35px;
+}
+}
+
+
+/* Small Responnsive */
+
+@media screen and (max-width: 768px) {
+ 
+.main-container{
+    padding: 10px 10px;
+}
+
+.main-cards{
+    gap: 5px;
+    }
+
+.card{
+    width: 178px;
+}
+
+
+.card-inner > .card_icon{
+    font-size: 40px;
+    padding: 15px 15px;
+    margin: -25px 10px;
+}
+
+.card-inner > h3{
+    font-size: 8px;
+   padding-left: 96px ;
+   margin-top: 40px ;
+}
+
+.card > h1{
+   padding-left: 96px ;
+   margin-top: 50px ;
+   font-size: 18px;
+}
+
+.card > h3{
+   padding-left: 96px ;
+   margin-top: 73px ;
+   font-size: 8px;
+}
+
+
+.chartes{
+    display: inline;
+   gap: 50px;
+}
+
+.chart-container{
+width: 745px;
+}
+
+.charts{
+    margin-top: 50px;
+    height: 350px;
+    width: 1540px;
+}
+
+#days{
+margin-left: 620px;
+padding: 12px 12px;
+}
+
+
+.pie-chart-container{
+width: 745px;
+height: 405px;
+}
+
+.pie-chart-container > h1 {
+    padding: 25px 0px 0px 303px;
+}
+
+.pie-chart-container > h3 {
+    padding-left:265px;
+}
+
+.pie-chart-container p {
+    padding: 105px 0px 0px 330px;
+}
+
+.pie-chart-container span {
+    width: 20%;
+    padding: 163px 0px 0px 315px;
+}
+
+.pie-chart{
+  padding-left:235px;
+  margin-top: -35px;
+}
+
+.p{
+    margin-left: -60px;
+    font-size: 25px;
+}
+
+
+.grid-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+    "header"
+    "main";
+}
+
+#sidebar{
+display: none;
+}
+
+.menu-icon{
+    display: inline;
+}
+
+.sidebar-title > span{
+display: inline;
+}
+
+
+#sidebar{
+width:31% ;
+}
+
+.sidebar-brand{
+margin-top: 15px;
+}
+
+.sidebar-title{
+padding: 10px 20px 0px 28px;
+}
+
+.sidebar-list{
+margin-top: 15px;
+}
+
+
+.sidebar-list-1{
+margin-top: 70px;
+
+}
+
+
+
+.icon{
+    font-size: 15px;
+}
+
+.icon_header{
+font-size: 26px;
+}
+
+.close_icon{
+    margin-left: 68px;
+    font-weight: 600;
+    margin-top: -32px;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+
+    .main-container{
+        padding: 20px 50px;
+    }
+    
+    .main-cards{
+        grid-template-columns: 1fr;
+        gap: 15px;
+        }
+    
+    .card{
+        width: 450px;
+        height: 180px;
+    }
+    
+    
+    .card-inner > .card_icon{
+        font-size: 80px;
+        padding: 20px 20px;
+        margin: -60px 30px;
+    }
+    
+    .card-inner > h3{
+        font-size: 15px;
+       padding-left: 166px;
+       margin-top: 40px ;
+    }
+    
+    .card > h1{
+       padding-left: 166px ;
+       margin-top: 60px ;
+       font-size: 30px;
+    }
+    
+    .card > h3{
+       padding-left: 166px ;
+       margin-top: 95px ;
+       font-size: 20px;
+    }
+    
+    
+    .chartes{
+        display: inline;
+       gap: 50px;
+    }
+    
+    .chart-container{
+    width: 510px;
+    }
+    
+    .charts{
+        margin-top: 50px;
+        height: 350px;
+        width: 1073px;
+    }
+    
+    #days{
+    margin-left: 390px;
+    }
+    
+    
+    .pie-chart-container{
+    width: 510px;
+    height: 450px;
+    }
+    
+    .pie-chart-container > h1 {
+        padding: 25px 0px 0px 185px;
+        font-size: 30px;
+    }
+    
+    .pie-chart-container > h3 {
+        padding-left:135px;
+        font-size: 20px;
+    }
+    
+    .pie-chart-container p {
+        padding: 130px 0px 0px 244px;
+    }
+    
+    .pie-chart-container span {
+        width: 20%;
+        padding: 190px 0px 0px 230px;
+    }
+    
+    .pie-chart{
+      padding-left:137px;
+      margin-top: -7px;
+    }
+    
+    .p{
+        font-size: 15px;
+    }
+    
+
+    #sidebar{
+    width:41% ;
+    }
+    
+    
+    .icon{
+        font-size: 15px;
+    }
+    
+    .icon_header{
+    font-size: 26px;
+    }
+    
+    .close_icon{
+        margin-left: 68px;
+        font-weight: 600;
+        margin-top: -32px;
+    }
+
+
+
+.search{
+padding: 5px 2px;
+}
+
+    .search-icon{
+        display: none;
+    }
+
+}
